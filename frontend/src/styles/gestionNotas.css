@@ -1,0 +1,124 @@
+.gestionNotas {
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  color: #222;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filtros {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.filtros select, .filtros button {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.filtros button {
+  background: #155dfb;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filtros button:hover {
+  background: #2d55aa;
+}
+
+.tableDetallada {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tableDetallada th{
+  background: #155dfb;
+  color: white;
+  padding: 10px;
+}
+
+.tableDetallada td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #155dfb;
+}
+
+.tableDetallada tr:nth-child(even) {
+  background-color: #eff6ff;
+}
+
+.tableDetallada select {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* .accion-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  align-self: center;
+} */
+
+.accion-table button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #222;
+  color: #fff;
+}
+.btn-accion {
+  background-color: #155dfb;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.formCrud {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  width: auto;
+  gap: 30px;
+}
+
+.formCrud button{
+  background-color: #155dfb;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.formCrud select {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.formCrud textarea {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  padding: 5px 10px;
+}

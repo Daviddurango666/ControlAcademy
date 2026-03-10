@@ -1,0 +1,710 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+}
+
+.logo {
+    font-size: 1.2rem;
+    color: #5047ff;
+    font-weight: 600;
+    align-self: center;
+}
+
+.opciones {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.rol {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.menuBurger {
+    display: none;
+}
+
+.sidebar {
+    display: none;
+}
+
+    
+.logout {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.logout a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.menu {
+    width: 90%;
+    height: auto;
+    margin: 20px auto 20px auto;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 2px #ccc;
+    padding: 0px 10px;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.menu nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    text-align: center;
+}
+
+nav ul li {
+    width: 100%;
+    /* display: flex; */
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    /* text-align: center; */
+    justify-content: center;
+    align-content: center;
+}
+
+nav ul li .Icon {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.active {
+    background-color: oklch(0.97 0.014 254.604);
+    border-radius: 10px;
+    padding: 10px 5px;
+    text-align: center;
+    align-items: center;
+}
+.inactive {
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 5px 5px;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+}
+
+.menu nav ul li.active {
+    color: #155dfb;
+}
+
+.main {
+    align-content: center;
+    width: 90%;
+    display: flex;
+    margin: 10px auto 30px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    flex-direction: column;
+    display: flex;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.title-reportes {
+    flex-direction: row;
+    display: flex;
+    gap: 8px;
+    margin: 10px 0;
+    width: 100%;
+    justify-content: space-between;
+}
+.titulos {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-reporte .descargarReporte{
+    width: 100%;
+}
+
+.welcome {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.info {
+    color: #a1a1a1;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.cards {
+    margin: 10px auto;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+
+.card {
+    /* width: 350px; */
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding: 25px;
+    margin: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card .Icon {
+    color: #a1a1a1;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: all ease-in-out 0.3s;
+    border: 1px solid #ccc;
+    background-color: #eff6ff;
+    box-shadow: 0 0 5px 3px #eff6ff;
+    /* background: linear-gradient(135deg,rgba(238, 238, 238, 1) 0%, rgb(204, 204, 204) 40%, rgba(238, 238, 238, 1) 100%); */
+}
+
+.card:hover .Icon {
+    color: #155dfb;
+}
+h5 {
+    font-size: 14px;
+}
+
+.title-card {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.num {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.more-info {
+    color: #a1a1a1;
+    font-size: 12px;
+}
+
+.charts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px auto 0px auto;
+    padding: 5px;
+    width: 100%;
+    /* flex-wrap: wrap; */
+}
+
+.chart {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#rendimientoMaterias {
+    width: 49.6%;
+    height: 365px;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+
+#rendimientoMaterias:hover {
+    transform: scale(1.02);
+    transition: 0.3s all ease-in-out;
+}
+
+.materiaItem {
+  margin-bottom: 15px;
+}
+
+.MateriaHeader {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  flex-direction: row;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+progress {
+  width: 100%;
+  height: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+  appearance: none;
+}
+progress::-webkit-progress-bar {
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #02010a;
+  border-radius: 10px;
+}
+
+.asistenciaChart {
+    width: 98.5%;
+    height: 365px;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin: 5px; 
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.selectPeriodo {
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    justify-content: center;
+    display: flex;
+    margin: 40px 0px 20px 0px;
+}
+
+.asistenciaChart:hover {
+    transform: translateY(-5px);
+    transition: 0.3s all ease-in-out;
+}
+
+#tableAsistencia {
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin: 5px; 
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#tableAsistencia th{
+  background: #155dfb;
+  color: white;
+  padding: 10px;    
+}
+
+#tableAsistencia td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+#tableAsistencia tr:nth-child(even) {
+  background-color: #eff6ff;
+}
+
+#tableAsistencia:hover {
+    transform: scale(1.005);
+    transition: 0.3s all ease-in-out;
+}
+
+.calificacionesXmateria {
+    width: 100%;
+    height: auto;
+}
+
+.tendenciaCalificaciones {
+    width: 64.3%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    gap: 10px;
+}
+
+.tendenciaCalificaciones:hover {
+    transition: 0.3s ease-in-out all;
+    transform: translateY(-5px);
+}
+
+.tablaEvaluaciones {
+    width: 100%;
+    height: auto;
+    margin: 20px 0px;
+}
+
+.califActuales {
+    width: 35%;
+    height: auto;
+    /* padding: 10px; */
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.rendimientoAcademico {
+    background: linear-gradient(#155dfb, #6915fb);
+    border-radius: 10px;
+    border: none;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+    gap: 15px;
+}
+
+.rendimientoAcademico:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease-in-out all;
+}
+
+.rendimientoAcademico progress {
+    border: 5px solid #cccccc60;
+    width: 100%;
+    height: 20px;
+}
+
+.rendimientoAcademico .totales {
+    justify-content: space-around;
+    font-weight: 600;
+    display: flex;
+
+}
+
+.chartpormes {
+    width: 65%;
+    height: auto;
+    /* margin: 20px auto; */
+}
+.chartResumenPie {
+    width: 34%;
+    height: auto;
+    /* margin: 20px auto; */
+}
+
+/* tabla evaluaciones de estudiante*/
+#tableDetallada {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#tableDetallada th{
+  background: #155dfb;
+  color: white;
+  padding: 10px;
+}
+
+#tableDetallada td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #155dfb;
+}
+
+#tableDetallada tr:nth-child(even) {
+  background-color: #eff6ff;
+}
+
+#tableAsistencia:hover {
+    transform: scale(1.005);
+    transition: 0.3s all ease-in-out;
+}
+
+.filter {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter .select {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.filter .select select {
+    background-color: #e1e1e1;
+    border-radius: 10px;
+    border: transparent;
+    width: 100%;
+    height: 30px;
+}
+
+.descargarReporte {
+    width: 20%;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #000;
+    padding: 10px 5px;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* responsive */ 
+
+@media screen and (max-width: 992px) {
+    #sidebarEstudiantes, #sidebarDocentes {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+        flex-direction: column;
+        background: #fff;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: all 0.3s ease;
+        z-index: 999;
+        padding: 20px;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #sidebarEstudiantes.open,
+    #sidebarDocentes.open {
+        width: 70%;
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+    }
+
+    #sidebarEstudiantes li, 
+    #sidebarDocentes li {
+        list-style: none;
+        margin: 15px 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    #sidebarEstudiantes li a,
+    #sidebarDocentes li a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.2s ease;
+    }
+
+    #sidebarEstudiantes li.active a,
+    #sidebarDocentes li.active a {
+        background-color: #155dfb;
+        color: #fff;
+    }
+
+    #sidebarEstudiantes li a:hover,
+    #sidebarDocentes li a:hover {
+        background-color: #eff6ff;
+        color: #155dfb;
+    }
+
+    
+    /* Estilo del rol */
+    #sidebarEstudiantes .rol,
+    #sidebarDocentes .rol {
+        display: flex;
+        margin: 20px 0 10px 0;
+        font-weight: 600;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #155dfb;
+        text-align: center;
+    }
+    
+    /* Logout */
+    .logout {
+        border: 1px solid #ccc;
+        background-color: #fff;
+        padding: 8px 12px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .logout:hover {
+        background-color: #155dfb;
+    }
+    
+    .logout a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 600;
+    }
+    
+    .logout:hover a {
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    /* Mostrar el botón hamburguesa solo en móviles */
+    .menuBurger {
+        border: 1px solid #ccc;
+        background-color: #fff;
+        padding: 10px 15px;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    
+    
+    .menuBurger:hover {
+        background-color: #f2f2f2;
+    }
+    
+    #sidebarEstudiantes, 
+    #sidebarDocentes {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.95);
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease-in-out;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #sidebarEstudiantes.open,
+    #sidebarDocentes.open {
+        width: 70%;
+        opacity: 1;
+        visibility: visible;   
+    }
+    .menu {
+        background-color: #fff;
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+    .menuBurger {
+        display: flex;
+        
+    }   
+
+    .menu {
+        display: none;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .card {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .charts {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #rendimientoMaterias {
+        width: 100%;
+    }
+    .asistenciaChart {
+        width: 100%;
+    }
+
+    .logout {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .welcome {
+        font-size: 20px;
+    }
+
+    .info {
+        font-size: 12px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,155 @@
+.materias-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.materia-card-detalle {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.materia-card-detalle:hover {
+  transition: 0.3s all ease-in-out;
+  transform: translateY(-5px);
+  background-color: #eee;
+}
+
+.materia-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.materia-header h3 {
+  font-size: 1.3rem;
+  margin: 0;
+  color: #333;
+}
+
+.materia-header p {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.aprobado {
+  color: #0ba900;
+}
+
+.reprobado {
+  color: #ff0000;
+}
+
+.sobresaliente {
+  color: #0077ff;
+}
+
+.porcentaje-total {
+  text-align: right;
+  color: #004cff;
+  font-weight: 600;
+}
+
+.barra-progreso progress {
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  margin-top: 5px;
+  accent-color: #000;
+}
+
+.calificaciones-section {
+  margin-top: 20px;
+}
+
+.lista-calificaciones {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-calificacion {
+  flex: 1;
+  min-width: 180px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.card-calificacion .peso {
+  color: #0077ff;
+  font-weight: 600;
+}
+
+.porcentaje-nota {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-calificacion .nota {
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.card-calificacion .nombre-eval {
+  color: #444;
+  font-weight: 500;
+}
+
+.card-calificacion .fecha {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.estado {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.estado.aprobado {
+  background: #0ba900;
+}
+
+.estado.reprobado {
+  background: #ff0000;
+}
+
+.estado.sobresaliente {
+  background: #0077ff;
+}
+
+.materia-footer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promedio-final .badge {
+  margin-left: 5px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.badge.excelente {
+  background: #0077ff;
+}
+
+.badge.aprobado {
+  background: #0ba900;
+}
+
+.badge.reprobado {
+  background: #ff0000;
+}
